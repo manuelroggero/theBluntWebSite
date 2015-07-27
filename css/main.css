@@ -1,4 +1,6 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* WEB PAGE RESET
+
+http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -22,7 +24,9 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-    font-family: "Roboto", sans-serif;        
+    
+/* Adding Google Font Family to RESET*/
+        font-family: "Roboto", sans-serif;        
     }
 
 /* HTML5 display-role reset for older browsers */
@@ -51,6 +55,56 @@ table {
 	border-spacing: 0;
 }
 
+/*
+-----------------------------------------------------------
+ESTABLISHING THE NEW CSS3 BOX-SIZING PROPERTY - GRID
+___________________________________________________________
+*/
+
+*,
+*before
+*:after {
+        -webkit-box-sizing: border-box;
+           -moz-box-sizing: border-box;
+            -ms-box-sizing: border-box;      
+                box-sizing: border-box; 
+}
+
+.container {
+    margin:0 auto;
+    width: 960px;
+    padding-left: 30px;
+    padding-right: 30px;
+  
+}
+
+.hero {
+    padding: 22px 80px 66px 80px;
+}
+    
+h1, h2, h3, h4, h5, h6, p {
+    margin-bottom: 22px;
+    margin-top: 22px;
+}
+
+/*
+-----------------------------------------------------------
+BUTTONS STYLES
+___________________________________________________________
+*/
+
+.btn {
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0;
+}
+
+.btn-alt {
+    border: 1px solid #dfe2e5; 
+    padding: 10px 30px;
+}
+
+
 
 /*---------------------------------------------------------*/
 /* From here we start the styling specific elements/tags of The Blunt Web Site */
@@ -71,3 +125,6 @@ h2 {
     font-size: 2em;
 }
         
+section { 
+
+}
