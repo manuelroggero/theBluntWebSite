@@ -58,7 +58,7 @@ table {
 /*
 -----------------------------------------------------------
 ESTABLISHING THE NEW CSS3 BOX-SIZING PROPERTY - GRID
-___________________________________________________________
+-----------------------------------------------------------
 */
 
 *,
@@ -90,13 +90,15 @@ h1, h2, h3, h4, h5, h6, p {
 /*
 -----------------------------------------------------------
 BUTTONS STYLES
-___________________________________________________________
+-----------------------------------------------------------
 */
 
-.btn {
+.btnNav {
     border-radius: 5px;
-    display: inline-block;
     margin: 0;
+    border: 1px solid #dfe2e5; 
+    padding: 10px 30px;
+
 }
 
 .btn-alt {
@@ -104,9 +106,81 @@ ___________________________________________________________
     padding: 10px 30px;
 }
 
+/*
+-----------------------------------------------------------
+MAIN NAVIGATION BAR
+-----------------------------------------------------------
+*/
+
+.mainNav {
+    float: left;
+    width: auto;
+    margin:0;
+    padding:0; 
+    background:clear;
+    width:100%;
+    border-bottom: 1px solid #001E2D;
+}
+
+.mainNav li {
+    display:inline;
+    padding:0;
+    margin:0;
+}
+
+.mainNav a:link, 
+.mainNav a:visited {
+    text-decoration: none;
+    background:clear;
+    padding:20px 40px 20px 40px;
+    width:auto;
+    float:left;
+    font-size: 2em;
+    color: #000;
+    border-right:1px solid #42432d;
+    
+}
+ 
+.mainNav a:hover, 
+.mainNav a:active {
+    text-decoration: none;
+    background:#0069A5;
+    color: #FFFFFF;
+}
+
+}
 
 
-/*---------------------------------------------------------*/
+/*
+-----------------------------------------------------------
+LINK STYLES
+-----------------------------------------------------------
+*/
+
+/*
+.mainNav li:link {
+   
+    text-decoration: none;
+    background-color: #B2FF99;
+}
+.mainNav li:visited {
+    text-decoration: none;
+    background-color: #FFFF85;
+}
+.mainNav li:hover {
+    text-decoration: underline;
+    background-color: #FF704D;
+}
+.mainNav li:active {
+    text-decoration: underline;
+    background-color: #FF704D;
+}
+*/
+
+
+
+/*
+---------------------------------------------------------
 /* From here we start the styling specific elements/tags of The Blunt Web Site */
 
 p {
