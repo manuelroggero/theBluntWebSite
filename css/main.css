@@ -131,8 +131,8 @@ LOGO STYLES
 
 .logoNav {
     float: left;
-    padding-top: 20px;
-    padding-top: 20px;
+    padding-right: 20px;
+    margin-left: 20px;
 }
 
 /*
@@ -144,8 +144,30 @@ footer {
     color: #fff;
     font-size: 0.8em;
     padding-bottom: 1.5%;
-    padding-top: 5%;
-    background: #000055;
+    padding-top: 1.5%;
+    background: #001E2D;
+    height: auto;
+}
+
+.footerLink {
+    float: right;
+    background:#005C91; 
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 900;
+    color: #fff;
+    text-align: right;
+    margin-right: 2.5%;
+    margin-bottom: 5%;
+    padding:20px 40px 20px 40px;
+    width:auto;
+    text-align: center;
+}
+
+.footerContainer {
+    width: 66%;
+    font-style:italic;
+    font-size: 1.2em;
 }
 
 /*
