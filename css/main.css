@@ -70,6 +70,21 @@ time, mark, audio, video {
 
 /*
 -----------------------------------------------------------
+ESTABLISHING THE NEW CSS3 BOX-SIZING PROPERTY - GRID
+-----------------------------------------------------------
+*/
+
+*,
+*:before,
+*:after {
+        -webkit-box-sizing: border-box;
+           -moz-box-sizing: border-box;
+            -ms-box-sizing: border-box;      
+                box-sizing: border-box; 
+}
+
+/*
+-----------------------------------------------------------
 CUSTOM TYPOGRAPHY STYLES
 -----------------------------------------------------------
 */
@@ -77,7 +92,7 @@ CUSTOM TYPOGRAPHY STYLES
 body {
     color: #001E2D;
     font-family: "Roboto", sans-serif;
-    font-size: 1em;
+    font-size: 1.2em;
     line-height: 1.2;
 }
 
@@ -86,11 +101,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 400px;
+    font-size: 3em;
     line-height: 1.5;
+    font-weight: 900;
 }
 
 h2 {
+    font-size: 2em;
     line-height: 150%;
     font-weight: 900;
 }   
@@ -112,32 +129,55 @@ LOGO STYLES
 -----------------------------------------------------------
 */
 
-
-
-
+.logoNav {
+    float: left;
+    padding-top: 20px;
+    padding-top: 20px;
+}
 
 /*
 -----------------------------------------------------------
-ESTABLISHING THE NEW CSS3 BOX-SIZING PROPERTY - GRID
+FOOTER STYLES
+-----------------------------------------------------------
+*/
+footer {
+    color: #fff;
+    font-size: 0.8em;
+    padding-bottom: 1.5%;
+    padding-top: 5%;
+    background: #000055;
+}
+
+/*
+-----------------------------------------------------------
+SUBSECTION STYLES
 -----------------------------------------------------------
 */
 
-*,
-*before
-*:after {
-        -webkit-box-sizing: border-box;
-           -moz-box-sizing: border-box;
-            -ms-box-sizing: border-box;      
-                box-sizing: border-box; 
-}
+
+
+
+
+
 
 .container {
-    margin:0 auto;
-    width: 960px;
+    clear: left;
+    margin-top: 30px;
+    width: auto;
     padding-left: 30px;
     padding-right: 30px;
-  
+    height: auto;
 }
+
+.container2 {
+    margin-top: 30px;
+    width: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: auto;
+    type-style:
+}
+
 
 .hero {
     padding: 22px 80px 66px 80px;
@@ -179,12 +219,11 @@ MAIN NAVIGATION BAR
     margin:0;
     padding:0; 
     background:clear;
-    width:100%;
     border-bottom: 1px solid #001E2D;
 }
 
 .mainNav li {
-    display:inline;
+    display:inline-block;
     padding:0;
     margin:0;
 }
@@ -196,8 +235,8 @@ MAIN NAVIGATION BAR
     padding:20px 40px 20px 40px;
     width:auto;
     float:left;
-    font-size: 2em;
-    color: #000;
+    font-size: 1.5em;
+    color: #001E2D;
     text-align: center;
 }
  
@@ -225,9 +264,11 @@ POSITIONING CONTENT ON HOME PAGE
 .col1-3,
 .col2-3 {
     display: inline-block;
-    vertical-align: top;
+    vertical-align: text-bottom;
+    padding-top: 20px;
     padding-left: 15px;
     padding-right: 15px;
+    border-top: 1px solid #001E2D;
 }
 
 
@@ -263,22 +304,6 @@ LINK STYLES
 ---------------------------------------------------------
 /* From here we start the styling specific elements/tags of The Blunt Web Site */
 
-p {
-    font-color: #606060;
-    font-size: 1.5em;
-}
-        
-h1 {
-    font-style: normal;
-    font-weight: 900;
-    font-size: 3em;
-}
 
-h2 {
-    font-type: Roboto:900;
-    font-size: 2em;
-}
-        
-section { 
 
 }
