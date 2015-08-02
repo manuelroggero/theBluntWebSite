@@ -67,7 +67,13 @@ time, mark, audio, video {
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;   
 }
 
-
+@font-face {
+  font-family: "Special Elite";
+  font-style: normal;
+  font-weight: 400;
+  src: local('Special Elite'), local('SpecialElite-Regular'), url(http://fonts.gstatic.com/s/specialelite/v6/9-wW4zu3WNoD5Fjka35JmzxObtw73-qQgbr7Be51v5c.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
 /*
 -----------------------------------------------------------
 ESTABLISHING THE NEW CSS3 BOX-SIZING PROPERTY - GRID
@@ -94,6 +100,7 @@ body {
     font-family: "Roboto", sans-serif;
     font-size: 1.2em;
     line-height: 1.2;
+    
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -123,6 +130,15 @@ a {
   color: #001E2D;
 }
 
+.uniqueText {
+    font-family: "Special Elite";
+    font-size: 2em;
+    font-style: italic;
+    margin-left: 7.5%;
+    margin-right: 15%;
+    font-weight: 100;
+}
+
 /*
 -----------------------------------------------------------
 LOGO STYLES
@@ -135,57 +151,40 @@ LOGO STYLES
     margin-left: 20px;
 }
 
-/*
------------------------------------------------------------
-FOOTER STYLES
------------------------------------------------------------
-*/
-footer {
-    color: #fff;
-    font-size: 0.8em;
-    padding-bottom: 1.5%;
-    padding-top: 1.5%;
-    background: #001E2D;
-    height: auto;
-}
-
-.footerLink {
-    float: right;
-    background:#005C91; 
-    text-decoration: none;
-    font-size: 1.2em;
-    font-weight: 900;
-    color: #fff;
-    text-align: right;
-    margin-right: 2.5%;
-    margin-bottom: 5%;
-    padding:20px 40px 20px 40px;
-    width:auto;
-    text-align: center;
-}
-
-.footerContainer {
-    width: 66%;
-    font-style:italic;
-    font-size: 1.2em;
-}
 
 /*
 -----------------------------------------------------------
-SUBSECTION STYLES
+SECTION STYLES
 -----------------------------------------------------------
 */
 
+body {
+     background-image: url("../img/geers.svg"), linear-gradient(45deg, rgba(0,92,145,0.85) 0%,rgba(255,255,255,1) 100%);
+    margin-right: 5%;
+    margin-left: 5%;
+    
+    
+    /*background-image:  url("../img/engineeringBackground.svg");
+    background-repeat: no-repeat;
+    background-image: url("../img/engineeringBackground.svg");
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    background-size: 100% 100%;
+    background-blend-mode: hue;*/
+   
+ 
+    
+}
 
 
 
 
 
 
-.container {
+.container1 {
     clear: left;
-    margin-top: 30px;
     width: auto;
+    padding-top: 30px;
     padding-left: 30px;
     padding-right: 30px;
     height: auto;
@@ -197,9 +196,17 @@ SUBSECTION STYLES
     padding-left: 30px;
     padding-right: 30px;
     height: auto;
-    type-style:
+       
+  
 }
 
+.container3 {
+    margin-top: 30px;
+    width: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: auto;   
+}
 
 .hero {
     padding: 22px 80px 66px 80px;
@@ -254,7 +261,8 @@ MAIN NAVIGATION BAR
 .mainNav a:visited {
     text-decoration: none;
     background:clear;
-    padding:20px 40px 20px 40px;
+    padding:20px 20px 20px 20px;
+    margin-right: 40px;
     width:auto;
     float:left;
     font-size: 1.5em;
@@ -267,6 +275,29 @@ MAIN NAVIGATION BAR
     text-decoration: none;
     background:#0069A5;
     color: #FFFFFF;
+}
+
+.logoNav li {
+    float: left;
+    display: inline-block;
+    margin-top: 2.5%;
+}
+
+.noEffectLink a:hover,
+.noEffectLink a:active,
+.noEffectLink a:link,
+.noEffectLink a:visited {
+    text-decoration: none;  
+    background:clear;
+}
+
+#tagLine {
+    padding-left: 30px;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 2em;
+    height:150px;
+    padding-top: 60px;
 }
 
 /*
@@ -292,6 +323,62 @@ POSITIONING CONTENT ON HOME PAGE
     padding-right: 15px;
     border-top: 1px solid #001E2D;
 }
+
+/*
+-----------------------------------------------------------
+FOOTER STYLES
+-----------------------------------------------------------
+*/
+
+.pictureFooter {
+    float: left;
+    padding-right: 1.5%;
+    padding-bottom: 1.5%;
+    padding-left: 1.5%;
+    padding-top: 1.5%;
+    
+}
+
+footer {
+    color: #fff;
+    font-size: 0.8em;
+    padding-bottom: 2.5%;
+    padding-top: 1.5%;
+    background: #001E2D;
+    height: auto;
+    font-weight: 100;
+    
+}
+
+.footerLink:link,
+.footerLink:visited {
+    border: none;
+    float: right;
+    background: #005C91; 
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #fff;
+    text-align: right;
+    margin-right: 2.5%;
+    margin-bottom: 2.5%;
+    padding:20px 40px 20px 40px;
+    width:auto;
+    text-align: center;
+}
+
+.footerLink:hover,
+.footerLink:active {
+   background: #001E2D;
+}
+
+.footerContainer {
+    width: 66%;
+    font-style:italic;
+    font-size: 1.2em;
+}
+
+
+
 
 
 /*
@@ -324,8 +411,3 @@ LINK STYLES
 
 /*
 ---------------------------------------------------------
-/* From here we start the styling specific elements/tags of The Blunt Web Site */
-
-
-
-}
