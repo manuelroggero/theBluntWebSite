@@ -95,7 +95,8 @@ CUSTOM TYPOGRAPHY STYLES
 -----------------------------------------------------------
 */
 
-body {
+
+body {                                  /*Color of body text, size and line spacing between rows*/                             
     color: #001E2D;
     font-family: "Roboto", sans-serif;
     font-size: 1.2em;
@@ -103,8 +104,9 @@ body {
     
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: #005C91    
+
+h1, h2, h3, h4, h5, h6 {                /*Color of Heading text*/
+    color: #004161   
 }
 
 h1 {
@@ -170,18 +172,11 @@ body {
     background-repeat: no-repeat;
     background-position: 0 100%;
     background-size: 100% 100%;
-    background-blend-mode: hue;*/
-   
- 
-    
+    background-blend-mode: hue;*/    
 }
 
-
-
-
-
-
 .container1 {
+    display: block;
     clear: left;
     width: auto;
     padding-top: 30px;
@@ -191,16 +186,18 @@ body {
 }
 
 .container2 {
+    display: block;
     margin-top: 30px;
     width: auto;
+    height: auto;
+    padding-top: 10px;
     padding-left: 30px;
     padding-right: 30px;
-    height: auto;
-       
-  
+    background: rgba(204,249,255,.3);
 }
 
 .container3 {
+    display: block;
     margin-top: 30px;
     width: auto;
     padding-left: 30px;
@@ -208,13 +205,10 @@ body {
     height: auto;   
 }
 
-.hero {
-    padding: 22px 80px 66px 80px;
-}
-    
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6 {
     margin-bottom: 22px;
     margin-top: 22px;
+    text-shadow: 0px 3px 7px #CCF9FF;
 }
 
 /*
@@ -236,6 +230,42 @@ BUTTONS STYLES
     padding: 10px 30px;
 }
 
+
+/*
+-----------------------------------------------------------
+VIDEO STYLES
+-----------------------------------------------------------
+*/
+
+video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    width: 50%;
+    box-shadow: 0px 15px 40px #888888;
+    
+}
+
+/*
+-----------------------------------------------------------
+IMAGE STYLES
+-----------------------------------------------------------
+*/
+
+.comparisonImg {
+    border-radius: 5px;
+    display: block;
+    margin-bottom: 22px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5%;
+    box-shadow: 0px 5px 20px #888888;
+}
+
+
 /*
 -----------------------------------------------------------
 MAIN NAVIGATION BAR
@@ -244,11 +274,12 @@ MAIN NAVIGATION BAR
 
 .mainNav {
     float: left;
-    width: auto;
+    width: 100%;
     margin:0;
     padding:0; 
-    background:clear;
-    border-bottom: 1px solid #001E2D;
+    background: #fff;
+    border-bottom: 3px solid #004161;
+    border-radius: 10px;
 }
 
 .mainNav li {
@@ -268,19 +299,22 @@ MAIN NAVIGATION BAR
     font-size: 1.5em;
     color: #001E2D;
     text-align: center;
+    border-radius: 10px;
 }
  
 .mainNav a:hover, 
 .mainNav a:active {
     text-decoration: none;
-    background:#0069A5;
+    background: #004161;
     color: #FFFFFF;
+    box-shadow: 0px 5px 20px #888888;
 }
 
 .logoNav li {
     float: left;
     display: inline-block;
     margin-top: 2.5%;
+    margin-bottom: 1.5%;
 }
 
 .noEffectLink a:hover,
@@ -298,11 +332,14 @@ MAIN NAVIGATION BAR
     font-size: 2em;
     height:150px;
     padding-top: 60px;
+    color:#004161;
+    letter-spacing: 4px;
+    word-spacing: 15px;
 }
 
 /*
 -----------------------------------------------------------
-POSITIONING CONTENT ON HOME PAGE
+COLUMN STYLES
 -----------------------------------------------------------
 */
 
@@ -317,11 +354,11 @@ POSITIONING CONTENT ON HOME PAGE
 .col1-3,
 .col2-3 {
     display: inline-block;
-    vertical-align: text-bottom;
+    vertical-align: text-TOP;
     padding-top: 20px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border-top: 1px solid #001E2D;
+    padding-left: 25px;
+    padding-right: 25px;
+    
 }
 
 /*
@@ -330,24 +367,24 @@ FOOTER STYLES
 -----------------------------------------------------------
 */
 
-.pictureFooter {
-    float: left;
-    padding-right: 1.5%;
-    padding-bottom: 1.5%;
-    padding-left: 1.5%;
-    padding-top: 1.5%;
-    
-}
-
 footer {
+    display: block;
     color: #fff;
     font-size: 0.8em;
     padding-bottom: 2.5%;
     padding-top: 1.5%;
     background: #001E2D;
-    height: auto;
+    height: 220px;
     font-weight: 100;
     
+}
+
+.pictureFooter {
+    float: left;
+    padding-right: 1.5%;
+    padding-bottom: 1.5%;
+    padding-left: 1.5%;
+        
 }
 
 .footerLink:link,
